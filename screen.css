@@ -98,3 +98,11 @@
   background: thistle;
   padding: 0.6rem;
 }
+
+.levelType__container {
+  display: grid;
+}
+/* Hide keyboard */
+.hide__keyboard__container {
+  display: grid;
+}
