@@ -16,7 +16,7 @@ const rowOne = [
   ['!', '1'],
   ['@', '2'],
   ['#', '3'],
-  ['$', '4', '₪'],
+  ['₪', '4'],
   ['%', '5'],
   ['^', '6'],
   ['&', '7'],
@@ -30,10 +30,10 @@ const rowOne = [
 
 const keyboardRowTwo = document.getElementById('row__two');
 const rowTwo = [
-  ['Tab', '↹'],
+  ['Tab ↹'],
   ['/'],
   [`'`],
-  ['ק', '€'],
+  ['ק'],
   ['ר'],
   ['א'],
   ['ט'],
@@ -60,7 +60,7 @@ const rowThree = [
   ['ך'],
   [':', 'ף'],
   ['"', ','],
-  ['Return', '↵'],
+  ['Return ↵'],
 ];
 
 const keyboardRowFour = document.getElementById('row__four');
@@ -121,7 +121,7 @@ rowOne.forEach((key, index) => {
   
     key.forEach((char, index) => {
       const keyboardChar = document.createElement('p');
-      if (char === 'Tab') {
+      if (char === 'Tab ↹') {
         keyboardKey.classList = 'keys tab__key';
       }
       keyboardChar.innerText = char;
@@ -143,7 +143,7 @@ rowOne.forEach((key, index) => {
         keyboardKey.classList = 'keys capsLock__key';
       }
   
-      if (char === 'Return') {
+      if (char === 'Return ↵') {
         keyboardKey.classList = 'keys return__key';
       }
   
@@ -190,7 +190,7 @@ rowOne.forEach((key, index) => {
         keyboardKey.classList = 'keys space__key';
       }
       if (char === 'Ctrl') {
-        keyboardKey.classList = 'keys ';
+        keyboardKey.classList = 'keys ctrl__key';
       }
       if (char === 'Alt' || char === 'Alt Gr') {
         keyboardKey.classList = 'keys alt__key';
