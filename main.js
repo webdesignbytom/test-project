@@ -206,3 +206,15 @@ rowOne.forEach((key, index) => {
 window.addEventListener('keydown', (e) => {
   console.log('WORKING');
 });
+
+function getValue() {
+  var isChecked = document.getElementById("myCheckBox").checked;
+   
+  if(isChecked){
+    console.log("Input is checked");
+  } else {
+    console.log("Input is NOT checked");
+  }
+}
+
+
