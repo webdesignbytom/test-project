@@ -190,7 +190,7 @@ rowOne.forEach((key, index) => {
         keyboardKey.classList = 'keys space__key';
       }
       if (char === 'Ctrl') {
-        keyboardKey.classList = 'keys ctrl__key';
+        keyboardKey.classList = 'keys ';
       }
       if (char === 'Alt' || char === 'Alt Gr') {
         keyboardKey.classList = 'keys alt__key';
