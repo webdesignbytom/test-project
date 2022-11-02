@@ -13,13 +13,46 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <section class="screen__container" id="screen__container">
-      <div class="game__container" id="game__container">one</div>
-    </section>
+
+    <main class="screen__container" id="screen__container">
+      <div class="game__container" id="game__container">
+        <div class="game__info__container" id="game__info__container">
+          <div class="level__container" id="level__container">
+            Level: <span id="level__int">1</span>
+          </div>
+
+          <section class="timer__container" id="timer__container">
+            <p>00:00</p>
+          </section>
+          <div class="accuracy__container">
+            <!-- innner html = hits + {data}  -->
+            <h4>Hit: <span id="hit__container">0</span></h4>
+            <h4>Miss: <span id="miss__container">0</span></h4>
+          </div>
+        </div>
+
+        <div class="middle__container" id="middle__container">
+
+          <div class="game__display" id="game__display">
+            <article class="game__letters" id="game__letters">ABCDEFG</article>
+          </div>
+
+          <div class="controls__container" id="controls__container">
+            <div class="levelType__container" id="levelType__container">Mission type</div>
+            <div class="speed__container" id="speed__container">Speed</div>
+            <div class="hide__keyboard__container" id="hide__keyboard__container">Hide</div>
+          </div>
+        </div>
+
+        <div class="buttons__container" id="buttons__container">
+          You Win Next Reset Start
+        </div>
+      </div>
+    </main>
 
     <section class="keyboard__container" id="keyboard__container">
-        
       <div class="keyboard__wrapp" id="keyboard__wrapp">
         <div class="row" id="row__one"></div>
 
