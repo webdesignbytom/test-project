@@ -15,12 +15,11 @@
   </head>
 
   <body>
-
     <main class="screen__container" id="screen__container">
       <div class="game__container" id="game__container">
         <div class="game__info__container" id="game__info__container">
           <div class="level__container" id="level__container">
-            Level: <span id="level__int">1</span>
+            <h4>Level: <span id="level__int">1</span></h4>
           </div>
 
           <section class="timer__container" id="timer__container">
@@ -34,51 +33,67 @@
         </div>
 
         <div class="middle__container" id="middle__container">
-
           <div class="game__display" id="game__display">
             <article class="game__letters" id="game__letters">ABCDEFG</article>
           </div>
 
           <div class="controls__container" id="controls__container">
-
             <div class="levelType__container" id="levelType__container">
               <label for="type">Game:</label>
               <select id="type" name="type">
                 <option value="drill">Drills</option>
                 <option value="timeTrial">Timed</option>
-              
-              </select> 
+              </select>
             </div>
 
             <div class="speed__container" id="speed__container">
-
               <div class="speed__title">
                 <h4>Speed</h4>
               </div>
 
               <div class="speed__info">
                 <div class="up__arrow" id="up__arrow">
-                  <button class="speed__btn"><i class="fa-solid fa-arrow-up"></i></button>
+                  <button class="speed__btn">
+                    <i class="fa-solid fa-arrow-up"></i>
+                  </button>
                 </div>
                 <div class="speed__setting" id="speed__setting">
                   <span id="speed__setting__int">1</span>
                 </div>
                 <div class="down__arrow" id="down__arrow">
-                  <button class="speed__btn"><i class="fa-solid fa-arrow-down"></i></button>
+                  <button class="speed__btn">
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </button>
                 </div>
               </div>
             </div>
 
-            <div class="hide__keyboard__container" id="hide__keyboard__container">
-              <label><p>Hide</p> <p>Keyboard</p>
+            <div
+              class="hide__keyboard__container"
+              id="hide__keyboard__container"
+            >
+              <label
+                ><p>Hide</p>
+                <p>Keyboard</p>
               </label>
-              <input id="myCheckBox" class="myCheckBox" type="checkbox" > 
+              <input id="myCheckBox" class="myCheckBox" type="checkbox" />
             </div>
           </div>
         </div>
 
         <div class="buttons__container" id="buttons__container">
-          You Win Next Reset Start
+
+          <div class="start__btn__container" id="start__btn__container">
+            <button id="special__btn">Start</button>
+          </div>
+
+          <div class="reset__btn__container" id="reset__btn__container">
+            <button id="special__btn">Reset</button>
+          </div>
+
+          <div class="next__btn__container" id="next__btn__container">
+            <button id="special__btn">Next</button>
+          </div>
         </div>
       </div>
     </main>

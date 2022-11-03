@@ -22,8 +22,8 @@
   border-style: solid; */
   display: grid;
   grid-template-rows: auto 1fr auto;
-  padding: 1rem;
-  gap: 0.2rem;
+  padding: .6em;
+  gap: 0.4rem;
 }
 
 .game__info__container {
@@ -33,7 +33,7 @@
   align-items: center;
   width: 100%;
 
-  padding: 0.6rem;
+  padding: 0 1rem;
 }
 
 .timer__container {
@@ -94,12 +94,6 @@
   background: sandybrown;
 }
 
-/* Game Buttons */
-.buttons__container {
-  background: thistle;
-  padding: 0.6rem;
-}
-
 /* Game type selector */
 .levelType__container {
   display: grid;
@@ -155,4 +149,43 @@
 
   display: grid;
   place-content: center;
+}
+
+/* bottom section */
+/* Game Buttons */
+.buttons__container {
+  background: thistle;
+  padding: 0.4rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-content: center;
+
+  border: 3px solid white;
+  border-radius: 12px;
+}
+
+.start__btn__container {
+  background: seagreen;
+  display: grid;
+  place-content: center;
+}
+.reset__btn__container {
+  background: peru;
+  display: grid;
+  place-content: center;
+}
+.next__btn__container {
+  background: rebeccapurple;
+  display: grid;
+  place-content: center;
+}
+
+#special__btn {
+  padding: .8rem;
+  width: 100px;
+  border-radius: 50%;
+
+  border: 3px solid black;
+  font-size: 1.2rem;
 }
