@@ -20,6 +20,7 @@
         <div class="game__info__container" id="game__info__container">
           <div class="level__container" id="level__container">
             <h4>Level: <span id="level__int">1</span></h4>
+            <h4><span id="level__type__display"></span></h4>
           </div>
 
           <section class="timer__container" id="timer__container">
@@ -34,15 +35,15 @@
 
         <div class="middle__container" id="middle__container">
           <div class="game__display" id="game__display">
-            <article class="game__letters" id="game__letters">ABCDEFG</article>
+            <article class="game__letters" id="game__letters"></article>
           </div>
 
           <div class="controls__container" id="controls__container">
             <div class="levelType__container" id="levelType__container">
               <label for="type">Game:</label>
-              <select id="type" name="type">
-                <option value="drill">Drills</option>
-                <option value="timeTrial">Timed</option>
+              <select id="levelType__selector" name="type" onchange="levelSelection(event)">
+                <option value="Drills" label="Drills">Drills</option>
+                <option value="Time Trial" label="Time Trial">Timed</option>
               </select>
             </div>
 
@@ -52,16 +53,16 @@
               </div>
 
               <div class="speed__info">
-                <div class="up__arrow" id="up__arrow">
-                  <button class="speed__btn">
+                <div class="up__arrow">
+                  <button class="speed__btn" id="up__arrow">
                     <i class="fa-solid fa-arrow-up"></i>
                   </button>
                 </div>
                 <div class="speed__setting" id="speed__setting">
-                  <span id="speed__setting__int">1</span>
+                  <span id="speed__setting__int"></span>
                 </div>
-                <div class="down__arrow" id="down__arrow">
-                  <button class="speed__btn">
+                <div class="down__arrow" >
+                  <button class="speed__btn" id="down__arrow">
                     <i class="fa-solid fa-arrow-down"></i>
                   </button>
                 </div>
@@ -76,7 +77,7 @@
                 ><p>Hide</p>
                 <p>Keyboard</p>
               </label>
-              <input id="myCheckBox" class="myCheckBox" type="checkbox" />
+              <input id="hide__keyboard" class="hide__keyboard" type="checkbox" onclick="hideKeyboard()" />
             </div>
           </div>
         </div>
@@ -84,15 +85,15 @@
         <div class="buttons__container" id="buttons__container">
 
           <div class="start__btn__container" id="start__btn__container">
-            <button id="special__btn">Start</button>
+            <button id="special__btn" onclick="startGame()">Start</button>
           </div>
 
           <div class="reset__btn__container" id="reset__btn__container">
-            <button id="special__btn">Reset</button>
+            <button id="special__btn" onclick="resetLevel()">Reset</button>
           </div>
 
           <div class="next__btn__container" id="next__btn__container">
-            <button id="special__btn">Next</button>
+            <button id="special__btn" onclick="nextLevel()">Next</button>
           </div>
         </div>
       </div>
